@@ -1,0 +1,298 @@
+* {
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: var(--default-color)
+}
+
+:root {
+    --default-color: #8E7754
+}
+
+/*start header*/
+#header {
+    height: 100vh;
+    background-image: url(../images/drew-coffman-1872.jpg);
+    background-size: 100% 100%;
+}
+
+.active {
+    color: var(--default-color) !important;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: var(--default-color);
+}
+
+#header .leair {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+#header .leair h1 {
+    font-size: 80px;
+    font-weight: bold !important;
+    color: var(--default-color)
+}
+
+#header .leair .btn2:hover {
+    background-color: white;
+    color: black !important;
+}
+
+#header .leair .btn1 {
+    background-color: var(--default-color);
+
+}
+
+#header .leair .btn1:hover {
+    background-color: white;
+    color: black !important;
+}
+
+/*end header*/
+
+/*start about*/
+#about svg {
+    font-size: 20px;
+    color: var(--default-color);
+    border: 1px solid var(--default-color);
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+/*end about*/
+
+/*start location*/
+#location {
+    background-color: #F8F8F8;
+}
+
+/*end location*/
+
+/*start contact*/
+#contact {
+    background-color: #F8F8F8;
+}
+
+#contact svg {
+    font-size: 20px;
+    color: white;
+    background-color: var(--default-color);
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+/*end contact*/
+
+/*start contactUs*/
+#contactUs {
+    background-color: #403D38;
+}
+
+#contactUs li:not(:last-child) {
+    border-bottom: 1px solid #96969618;
+    padding-bottom: 10px;
+}
+
+#contactUs .contactImg {
+    background-image: url(../images/contact-details-map.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+#contactUs .leair {
+
+    background-color: #403d38d5;
+}
+
+/*end contactUs*/
+
+/*start footer*/
+.footer {
+    background-color: #353330;
+}
+
+.footer svg {
+    font-size: 15px;
+    background-color: #403D38;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0 5px;
+
+}
+
+.footer .facebook {
+    font-size: 15px;
+    background-color: #403D38;
+    border-radius: 50%;
+    padding: 15px 18px;
+    margin: 0 5px;
+
+}
+
+.footer .linkedin {
+    font-size: 15px;
+    background-color: #403D38;
+    border-radius: 50%;
+    padding: 15px 17px;
+    margin: 0 5px;
+
+}
+
+.footer .facebook:hover {
+    background-color: #3B5998;
+    color: white !important;
+    transition: .5s;
+}
+
+.footer .twitter:hover {
+    background-color: #00ACED;
+    color: white !important;
+    transition: .5s;
+}
+
+.footer .google:hover {
+    background-color: #DD4B39;
+    color: white !important;
+    transition: .5s;
+}
+
+.footer .linkedin:hover {
+    background-color: #007BB5;
+    color: white !important;
+    transition: .5s;
+}
+
+/*end footer*/
+
+/*start top button*/
+
+.scrollBtn {
+    background-color: var(--default-color);
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+.scrollBtn:hover {
+    background-color: #ddd;
+}
+
+/*end top button*/
+
+
+/*start color box*/
+.colorBox {
+    display: flex;
+    position: fixed;
+    right: 0px;
+    top: 400px;
+    text-align: center;
+}
+
+.colorBox .color {
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    display: inline-block;
+
+}
+
+.colorBox .colors {
+    height: max-content;
+    border: 2px solid var(--default-color);
+    padding: 20px;
+    background-color: #ddd;
+
+}
+
+.colorBox .colorBtn {
+    background-color: var(--default-color);
+    height: max-content;
+    padding: 5px;
+}
+
+/*end color box*/
+
+
+/*start loading page*/
+
+#loadingPage {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+
+}
+
+body {
+
+    overflow: hidden;
+}
+
+#loadingPage svg {
+    color: var(--default-color);
+}
+
+/*end loading page*/
+
+
+/*----------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    #header .content {
+        width: 100% !important;
+    }
+
+
+    #about .about-content {
+        margin-top: 30px;
+        padding: 0 20px !important;
+    }
+
+    #about .about-img {
+        padding: 0 20px !important;
+    }
+
+    #location .location-content {
+        margin-bottom: 30px;
+        padding: 0 20px !important;
+    }
+
+    #location .location-img {
+        padding: 0 20px !important;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    #header .content h1 {
+        font-size: 60px;
+    }
+
+    .navbar-nav {
+        align-items: flex-end;
+    }
+
+    #navColor {
+        background-color: #353330;
+    }
+}
